@@ -1,0 +1,15 @@
+1、解决身份认证缓存问题[fatal: Authentication failed for]
+	git config --system --unset credential.helper
+	
+2、分支切换内容合并
+	先行暂存当前分支变更	git stash
+	切换到源分支			git checkout 源分支名称
+	拉取最新代码			git pull
+	切换回目标分支			git checkout 目前分支
+	从暂存区拉出之前的变更	git stash pop
+	合并内容				git merge 源分支名称
+	
+	
+3、从远端克隆项目到本地
+	git clone 源项目url
+	
