@@ -9,7 +9,11 @@
 	从暂存区拉出之前的变更	git stash pop
 	合并内容				git merge 源分支名称
 	
-	
 3、从远端克隆项目到本地
 	git clone 源项目url
 	
+4、查看历史
+	git log	查看历史所有版本信息
+	git log -x 查看最新的x个版本信息
+	git log -x filename	查看某个文件filename最新的x个版本信息（需要进入该文件所在目录）
+	git log --pretty=oneline	查看历史所有版本信息，只包含版本号和记录描述
